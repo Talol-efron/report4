@@ -11,28 +11,42 @@ public class Enemy {
     private int attack;
     private boolean dead;
 
-    /*public void set(String name, int hitPoint, int attack, boolean dead){
-        this.name = name;
-        this.hitPoint = hitPoint;
-        this.attack = attack;
-        this.dead = dead;
-    }*/
+    
 
     //メソッド名の最初の３文字は「get」する
     //例外としてboolean型の場合のみisXxxx()と言うメソッド名にする。
 
+    /**
+     * getterメソッドを用意し,private指定したnameにアクセス可能にする
+     * @return String型 name
+     */
     public String getName(){
         return this.name;
     }
-
+    
+    /**
+     * getterメソッドを用意し,private指定したhitpointにアクセス可能にする
+     * 
+     * @return int型 hitpoint
+     */
     public int getHitpoint(){
         return this.hitPoint;
     }
-
+    
+    /**
+     * getterメソッドを用意し,private指定したattackにアクセス可能にする
+     * 
+     * @return int型 attack
+     */
     public int getAttack(){
         return this.attack;
     }
-
+    
+    /**
+     * getterメソッドを用意し,private指定したdeadにアクセス可能にする
+     * 
+     * @return boolean型 dead
+     */
     public boolean isDead(){
         return this.dead;
     }
