@@ -1,14 +1,42 @@
 package jp.ac.uryukyu.ie.e205713;
 
+
 /**
  * 敵クラス。 String name; //敵の名前 int hitPoint; //敵のHP int attack; //敵の攻撃力 boolean
  * dead; //敵の生死状態。true=死亡。 Created by tnal on 2016/11/13.
  */
 public class Enemy {
-    public String name;
-    public int hitPoint;
-    public int attack;
-    public boolean dead;
+    private String name;
+    private int hitPoint;
+    private int attack;
+    private boolean dead;
+
+    /*public void set(String name, int hitPoint, int attack, boolean dead){
+        this.name = name;
+        this.hitPoint = hitPoint;
+        this.attack = attack;
+        this.dead = dead;
+    }*/
+
+    //メソッド名の最初の３文字は「get」する
+    //例外としてboolean型の場合のみisXxxx()と言うメソッド名にする。
+
+    public String getName(){
+        return this.name;
+    }
+
+    public int getHitpoint(){
+        return this.hitPoint;
+    }
+
+    public int getAttack(){
+        return this.attack;
+    }
+
+    public boolean isDead(){
+        return this.dead;
+    }
+
 
     /**
      * コンストラクタ。名前、最大HP、攻撃力を指定する。
