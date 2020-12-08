@@ -1,7 +1,7 @@
 import jp.ac.uryukyu.ie.e205713.*;
 public class Main2 {
     public static void main(String[] args) {
-        Hero hero = new Hero("勇者", 10, 5); // (a)
+        Hero hero = new Warrior("勇者", 10, 5); // (a)
         Enemy enemy = new Enemy("スライム", 6, 3);
 
         System.out.println(hero);
